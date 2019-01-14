@@ -8,13 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var first: Int = 0
+var second: Int = 0
 
+var choice1: String = ""
+var choice2: String = ""
+
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    //Mark: Properties
+    @IBOutlet weak var Option1: UILabel!
+    @IBOutlet weak var Option2: UILabel!
+    @IBOutlet weak var Input1: UITextField!
+    @IBOutlet weak var Input2: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Input1.delegate = self
+        Input2.delegate = self
     }
-
-
+    
+    //Mark: Delegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.tag == 1 {
+            Option1.text = textField.text
+            first = 0
+            choice1 = textField.text!
+        } else {
+            Option2.text = textField.text
+            second = 0
+            choice2 = textField.text!
+        }
+    }
+    
+    //Mark: Actions
 }
 

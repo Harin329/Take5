@@ -14,6 +14,16 @@
 		BE8CF09C21E7F9EE006C250D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8CF09A21E7F9EE006C250D /* LaunchScreen.storyboard */; };
 		BE8CF0A721E7F9EE006C250D /* Take5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF0A621E7F9EE006C250D /* Take5Tests.swift */; };
 		BE8CF0B221E7F9EE006C250D /* Take5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF0B121E7F9EE006C250D /* Take5UITests.swift */; };
+		BEF2C34B21EBF74C000E6F85 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34A21EBF74C000E6F85 /* SecondViewController.swift */; };
+		BEF2C34D21EBFCA9000E6F85 /* FastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */; };
+		BEF2C34F21EC053E000E6F85 /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */; };
+		BEF2C35121EC054A000E6F85 /* Q3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */; };
+		BEF2C35321EC0554000E6F85 /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */; };
+		BEF2C35521EC0561000E6F85 /* Q5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */; };
+		BEF2C35721EC056D000E6F85 /* Q6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */; };
+		BEF2C35921EC058B000E6F85 /* PastExpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35821EC058B000E6F85 /* PastExpViewController.swift */; };
+		BEF2C35B21EC0595000E6F85 /* ProConViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */; };
+		BEF2C35D21EC05AE000E6F85 /* GutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		BE8CF0AD21E7F9EE006C250D /* Take5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Take5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8CF0B121E7F9EE006C250D /* Take5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take5UITests.swift; sourceTree = "<group>"; };
 		BE8CF0B321E7F9EE006C250D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF2C34A21EBF74C000E6F85 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastViewController.swift; sourceTree = "<group>"; };
+		BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2ViewController.swift; sourceTree = "<group>"; };
+		BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3ViewController.swift; sourceTree = "<group>"; };
+		BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
+		BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q5ViewController.swift; sourceTree = "<group>"; };
+		BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q6ViewController.swift; sourceTree = "<group>"; };
+		BEF2C35821EC058B000E6F85 /* PastExpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastExpViewController.swift; sourceTree = "<group>"; };
+		BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProConViewController.swift; sourceTree = "<group>"; };
+		BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +120,16 @@
 				BE8CF09121E7F9EC006C250D /* AppDelegate.swift */,
 				BE8CF09321E7F9EC006C250D /* ViewController.swift */,
 				BE8CF09521E7F9EC006C250D /* Main.storyboard */,
+				BEF2C35821EC058B000E6F85 /* PastExpViewController.swift */,
+				BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */,
+				BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */,
+				BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */,
+				BEF2C34A21EBF74C000E6F85 /* SecondViewController.swift */,
+				BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */,
+				BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */,
+				BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */,
+				BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */,
+				BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */,
 				BE8CF09821E7F9EE006C250D /* Assets.xcassets */,
 				BE8CF09A21E7F9EE006C250D /* LaunchScreen.storyboard */,
 				BE8CF09D21E7F9EE006C250D /* Info.plist */,
@@ -256,7 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF2C34D21EBFCA9000E6F85 /* FastViewController.swift in Sources */,
+				BEF2C34F21EC053E000E6F85 /* Q2ViewController.swift in Sources */,
+				BEF2C35921EC058B000E6F85 /* PastExpViewController.swift in Sources */,
+				BEF2C34B21EBF74C000E6F85 /* SecondViewController.swift in Sources */,
+				BEF2C35321EC0554000E6F85 /* Q4ViewController.swift in Sources */,
+				BEF2C35D21EC05AE000E6F85 /* GutViewController.swift in Sources */,
 				BE8CF09421E7F9EC006C250D /* ViewController.swift in Sources */,
+				BEF2C35B21EC0595000E6F85 /* ProConViewController.swift in Sources */,
+				BEF2C35121EC054A000E6F85 /* Q3ViewController.swift in Sources */,
+				BEF2C35721EC056D000E6F85 /* Q6ViewController.swift in Sources */,
+				BEF2C35521EC0561000E6F85 /* Q5ViewController.swift in Sources */,
 				BE8CF09221E7F9EC006C250D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
