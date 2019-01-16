@@ -12,13 +12,13 @@ class GutViewController: UIViewController {
     @IBOutlet weak var Option1: UIButton!
     @IBOutlet weak var Option2: UIButton!
     @IBOutlet weak var timeLeft: UILabel!
-    var count: Int = 5
+    var count: Int = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Option1.setTitle(choice1, for: .normal)
         Option2.setTitle(choice2, for: .normal)
-        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
+        self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GutViewController.update), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.

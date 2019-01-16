@@ -28,7 +28,7 @@ class PastExpViewController: UIViewController {
         super.viewDidLoad()
         Option1.text = choice1
         Option2.text = choice2
-        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
+        self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         // Do any additional setup after loading the view.
     }
     @IBAction func hLive(_ sender: UIStepper) {

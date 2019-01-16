@@ -16,7 +16,7 @@ class Q4ViewController: UIViewController {
         super.viewDidLoad()
         b1.setTitle(choice1, for: .normal)
         b2.setTitle(choice2, for: .normal)
-        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
+        self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         // Do any additional setup after loading the view.
     }
     

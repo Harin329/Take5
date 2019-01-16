@@ -31,7 +31,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
         text2.placeholder = "Pros or Cons for " + choice2
         text1.delegate = self
         text2.delegate = self
-        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
+        self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         // Do any additional setup after loading the view.
     }
     

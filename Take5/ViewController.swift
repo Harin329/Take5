@@ -15,6 +15,8 @@ var choice1: String = ""
 var choice2: String = ""
 
 
+
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
     //Mark: Properties
