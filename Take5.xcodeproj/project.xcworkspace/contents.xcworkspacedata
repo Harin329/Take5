@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../Open_Sans">
+   </FileRef>
+   <FileRef
       location = "self:Take5.xcodeproj">
    </FileRef>
 </Workspace>

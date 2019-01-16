@@ -24,10 +24,10 @@ class GutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func gut1(_ sender: UIButton) {
-        first += (50 * Int.random(in: 0 ... 10))
+        first += (30 * Int.random(in: 0 ... 10))
     }
     @IBAction func gut2(_ sender: UIButton) {
-        second += (50 * Int.random(in: 0 ... 10))
+        second += (30 * Int.random(in: 0 ... 10))
     }
     
     @objc func update() {

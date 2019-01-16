@@ -19,6 +19,8 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Con2: UIButton!
     @IBOutlet weak var result1: UITextView!
     @IBOutlet weak var result2: UITextView!
+    @IBOutlet weak var conTable1: UITextView!
+    @IBOutlet weak var conTable2: UITextView!
     
     var oneEdit: Int = 0
     var twoEdit: Int = 0
@@ -29,6 +31,10 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
         Option2.text = choice2
         text1.placeholder = "Pros or Cons for " + choice1
         text2.placeholder = "Pros or Cons for " + choice2
+        result1.text.append("\n\n")
+        result2.text.append("\n\n")
+        conTable1.text.append("\n\n")
+        conTable2.text.append("\n\n")
         text1.delegate = self
         text2.delegate = self
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
@@ -45,7 +51,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             if text == "" {
                 return
             }
-            result1.text.append("++" + "\(text)\n")
+            result1.text.append("\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
             first += (10 * Int.random(in: 0 ... 10))
@@ -57,7 +63,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             if text == "" {
                 return
             }
-            result1.text.append("--" + "\(text)\n")
+            conTable1.text.append("\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
             first -= (10 * Int.random(in: 0 ... 10))
@@ -69,7 +75,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             if text == "" {
                 return
             }
-            result2.text.append("++" + "\(text)\n")
+            result2.text.append("\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
             second += (10 * Int.random(in: 0 ... 10))
@@ -81,7 +87,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             if text == "" {
                 return
             }
-            result2.text.append("--" + "\(text)\n")
+            conTable2.text.append("\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
             second -= (10 * Int.random(in: 0 ... 10))
