@@ -28,39 +28,40 @@ class PastExpViewController: UIViewController {
         super.viewDidLoad()
         Option1.text = choice1
         Option2.text = choice2
+        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
         // Do any additional setup after loading the view.
     }
     @IBAction func hLive(_ sender: UIStepper) {
         let oneHint: Int = Int(oneH!.value)
         oneHcounter.text = String(oneHint)
-        first += (oneHint * 2)
+        first += (oneHint * (20 * Int.random(in: 0 ... 10)))
     }
     
     @IBAction func oneMlive(_ sender: UIStepper) {
         let oneMint: Int = Int(oneM!.value)
         oneMcounter.text = String(oneMint)
-        first += oneMint
+        first += (oneMint * (10 * Int.random(in: 0 ... 10)))
     }
     
     @IBAction func oneBlive(_ sender: UIStepper) {
         let oneBint: Int = Int(oneB!.value)
         oneBcounter.text = String(oneBint)
-        first -= oneBint
+        first -= (oneBint * (10 * Int.random(in: 0 ... 10)))
     }
     @IBAction func twoHlive(_ sender: UIStepper) {
         let twoHint: Int = Int(twoH!.value)
         twoHcounter.text = String(twoHint)
-        second += (twoHint * 2)
+        second += (twoHint * (20 * Int.random(in: 0 ... 10)))
     }
     @IBAction func twoMlive(_ sender: UIStepper) {
         let twoMint: Int = Int(twoM!.value)
         twoMcounter.text = String(twoMint)
-        second += twoMint
+        second += (twoMint * (10 * Int.random(in: 0 ... 10)))
     }
     @IBAction func twoBlive(_ sender: UIStepper) {
         let twoBint: Int = Int(twoB!.value)
         twoBcounter.text = String(twoBint)
-        second -= twoBint
+        second -= (twoBint * (10 * Int.random(in: 0 ... 10)))
     }
     
     /*

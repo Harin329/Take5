@@ -31,6 +31,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
         text2.placeholder = "Pros or Cons for " + choice2
         text1.delegate = self
         text2.delegate = self
+        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
@@ -47,7 +48,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result1.text.append("++" + "\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
-            first += 1
+            first += (10 * Int.random(in: 0 ... 10))
         }
     }
     
@@ -59,7 +60,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result1.text.append("--" + "\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
-            first -= 1
+            first -= (10 * Int.random(in: 0 ... 10))
         }
     }
     
@@ -71,7 +72,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result2.text.append("++" + "\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
-            second += 1
+            second += (10 * Int.random(in: 0 ... 10))
         }
     }
     
@@ -83,7 +84,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result2.text.append("--" + "\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
-            second -= 1
+            second -= (10 * Int.random(in: 0 ... 10))
         }
     }
     /*

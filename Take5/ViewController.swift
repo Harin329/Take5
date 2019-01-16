@@ -14,6 +14,7 @@ var second: Int = 0
 var choice1: String = ""
 var choice2: String = ""
 
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
     //Mark: Properties
@@ -26,6 +27,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         Input1.delegate = self
         Input2.delegate = self
+        self.view.backgroundColor = UIColor(displayP3Red: 0xff, green: 0xe9, blue: 0x00, alpha: 1)
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(3)
+        self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
+        UIView.commitAnimations()
     }
     
     //Mark: Delegate
@@ -47,5 +53,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //Mark: Actions
+  
 }
 

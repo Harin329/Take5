@@ -13,6 +13,7 @@ class FastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
         if (first >= second) {
             calcFinal.text = choice1
         } else {

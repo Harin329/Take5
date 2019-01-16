@@ -16,14 +16,15 @@ class Q2ViewController: UIViewController {
         super.viewDidLoad()
         b1.setTitle(choice1, for: .normal)
         b2.setTitle(choice2, for: .normal)
+        self.view.backgroundColor = UIColor(hue: 0.51, saturation: 0.53, brightness: 0.66, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func q2b1(_ sender: UIButton) {
-        first += 1
+        first += (10 * Int.random(in: 0 ... 10))
     }
     @IBAction func q2b2(_ sender: UIButton) {
-        second += 1
+        second += (10 * Int.random(in: 0 ... 10))
     }
     
 
