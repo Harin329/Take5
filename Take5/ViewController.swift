@@ -45,11 +45,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.tag == 1 {
             Option1.text = textField.text
-            first = 0
+            first = Int.random(in: 0 ... 10)
             choice1 = textField.text!
         } else {
             Option2.text = textField.text
-            second = 0
+            second = Int.random(in: 0 ... 10)
             choice2 = textField.text!
         }
     }

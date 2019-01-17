@@ -12,7 +12,7 @@ class GutViewController: UIViewController {
     @IBOutlet weak var Option1: UIButton!
     @IBOutlet weak var Option2: UIButton!
     @IBOutlet weak var timeLeft: UILabel!
-    var count: Int = 3
+    var count: Int = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE80C70121F10A1B0044799E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80C70021F10A1B0044799E /* PrivacyViewController.swift */; };
 		BE8CF09221E7F9EC006C250D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF09121E7F9EC006C250D /* AppDelegate.swift */; };
 		BE8CF09421E7F9EC006C250D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF09321E7F9EC006C250D /* ViewController.swift */; };
 		BE8CF09721E7F9EC006C250D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8CF09521E7F9EC006C250D /* Main.storyboard */; };
@@ -25,15 +26,9 @@
 		BEF2C35B21EC0595000E6F85 /* ProConViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */; };
 		BEF2C35D21EC05AE000E6F85 /* GutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */; };
 		BEFD062721EF079100F6F737 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062221EF078300F6F737 /* OpenSans-Bold.ttf */; };
-		BEFD062821EF079300F6F737 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062621EF078400F6F737 /* OpenSans-BoldItalic.ttf */; };
-		BEFD062921EF079800F6F737 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD061F21EF078300F6F737 /* OpenSans-ExtraBold.ttf */; };
 		BEFD062A21EF079800F6F737 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062021EF078300F6F737 /* OpenSans-ExtraBoldItalic.ttf */; };
-		BEFD062B21EF079800F6F737 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062121EF078300F6F737 /* OpenSans-Italic.ttf */; };
-		BEFD062C21EF079800F6F737 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062321EF078300F6F737 /* OpenSans-Light.ttf */; };
-		BEFD062D21EF079800F6F737 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD061D21EF078200F6F737 /* OpenSans-LightItalic.ttf */; };
 		BEFD062E21EF079800F6F737 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD061E21EF078200F6F737 /* OpenSans-Regular.ttf */; };
 		BEFD062F21EF079800F6F737 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062421EF078300F6F737 /* OpenSans-SemiBold.ttf */; };
-		BEFD063021EF079800F6F737 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062521EF078300F6F737 /* OpenSans-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE80C70021F10A1B0044799E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		BE8CF08E21E7F9EC006C250D /* Take5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Take5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8CF09121E7F9EC006C250D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE8CF09321E7F9EC006C250D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,16 +73,10 @@
 		BEF2C35821EC058B000E6F85 /* PastExpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastExpViewController.swift; sourceTree = "<group>"; };
 		BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProConViewController.swift; sourceTree = "<group>"; };
 		BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutViewController.swift; sourceTree = "<group>"; };
-		BEFD061D21EF078200F6F737 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		BEFD061E21EF078200F6F737 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		BEFD061F21EF078300F6F737 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		BEFD062021EF078300F6F737 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		BEFD062121EF078300F6F737 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		BEFD062221EF078300F6F737 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		BEFD062321EF078300F6F737 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		BEFD062421EF078300F6F737 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		BEFD062521EF078300F6F737 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		BEFD062621EF078400F6F737 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +130,7 @@
 				BE8CF09121E7F9EC006C250D /* AppDelegate.swift */,
 				BE8CF09321E7F9EC006C250D /* ViewController.swift */,
 				BE8CF09521E7F9EC006C250D /* Main.storyboard */,
+				BE80C70021F10A1B0044799E /* PrivacyViewController.swift */,
 				BEF2C35821EC058B000E6F85 /* PastExpViewController.swift */,
 				BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */,
 				BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */,
@@ -154,15 +145,9 @@
 				BE8CF09A21E7F9EE006C250D /* LaunchScreen.storyboard */,
 				BE8CF09D21E7F9EE006C250D /* Info.plist */,
 				BEFD062221EF078300F6F737 /* OpenSans-Bold.ttf */,
-				BEFD062621EF078400F6F737 /* OpenSans-BoldItalic.ttf */,
-				BEFD061F21EF078300F6F737 /* OpenSans-ExtraBold.ttf */,
 				BEFD062021EF078300F6F737 /* OpenSans-ExtraBoldItalic.ttf */,
-				BEFD062121EF078300F6F737 /* OpenSans-Italic.ttf */,
-				BEFD062321EF078300F6F737 /* OpenSans-Light.ttf */,
-				BEFD061D21EF078200F6F737 /* OpenSans-LightItalic.ttf */,
 				BEFD061E21EF078200F6F737 /* OpenSans-Regular.ttf */,
 				BEFD062421EF078300F6F737 /* OpenSans-SemiBold.ttf */,
-				BEFD062521EF078300F6F737 /* OpenSans-SemiBoldItalic.ttf */,
 			);
 			path = Take5;
 			sourceTree = "<group>";
@@ -291,17 +276,11 @@
 			files = (
 				BE8CF09C21E7F9EE006C250D /* LaunchScreen.storyboard in Resources */,
 				BEFD062E21EF079800F6F737 /* OpenSans-Regular.ttf in Resources */,
-				BEFD062B21EF079800F6F737 /* OpenSans-Italic.ttf in Resources */,
-				BEFD063021EF079800F6F737 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				BEFD062A21EF079800F6F737 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				BEFD062F21EF079800F6F737 /* OpenSans-SemiBold.ttf in Resources */,
 				BE8CF09921E7F9EE006C250D /* Assets.xcassets in Resources */,
-				BEFD062D21EF079800F6F737 /* OpenSans-LightItalic.ttf in Resources */,
 				BEFD062721EF079100F6F737 /* OpenSans-Bold.ttf in Resources */,
 				BE8CF09721E7F9EC006C250D /* Main.storyboard in Resources */,
-				BEFD062C21EF079800F6F737 /* OpenSans-Light.ttf in Resources */,
-				BEFD062821EF079300F6F737 /* OpenSans-BoldItalic.ttf in Resources */,
-				BEFD062921EF079800F6F737 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +307,7 @@
 			files = (
 				BEF2C34D21EBFCA9000E6F85 /* FastViewController.swift in Sources */,
 				BEF2C34F21EC053E000E6F85 /* Q2ViewController.swift in Sources */,
+				BE80C70121F10A1B0044799E /* PrivacyViewController.swift in Sources */,
 				BEF2C35921EC058B000E6F85 /* PastExpViewController.swift in Sources */,
 				BEF2C34B21EBF74C000E6F85 /* SecondViewController.swift in Sources */,
 				BEF2C35321EC0554000E6F85 /* Q4ViewController.swift in Sources */,
