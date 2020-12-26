@@ -19,7 +19,7 @@ class GutViewController: UIViewController {
         Option1.setTitle(choice1, for: .normal)
         Option2.setTitle(choice2, for: .normal)
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
-        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GutViewController.update), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GutViewController.update), userInfo: nil, repeats: false)
         
         // Do any additional setup after loading the view.
     }

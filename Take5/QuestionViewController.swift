@@ -10,14 +10,29 @@ import UIKit
 import GoogleMobileAds
 
 class QuestionViewController: UIViewController {
+    @IBOutlet weak var Question: UILabel!
     @IBOutlet weak var b1: UIButton!
     @IBOutlet weak var b2: UIButton!
+    @IBOutlet weak var skip: UIButton!
+    @IBOutlet weak var hurry: UIButton!
+    
+    var questionList = [
+        "Which choice benefits your future more?",
+        "Which choice brings you more joy?",
+        "Which choice would your parents want you to choose?",
+        "Which choice is a more rare opportunity?",
+        "Which choice is a more efficient use of your time?",
+        "Which choice scares you more?"
+    ]
+    var currentQuestion = 0
+    var numQuestion = 5
     
     var bannerViewBottom: GADBannerView!
     var bannerViewTop: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Question.text = questionList[currentQuestion]
         b1.setTitle(choice1, for: .normal)
         b2.setTitle(choice2, for: .normal)
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
@@ -82,11 +97,31 @@ class QuestionViewController: UIViewController {
     
     @IBAction func q1b1(_ sender: UIButton) {
         first += (10 * Int.random(in: 0 ... 10))
+        currentQuestion += 1
+        if (currentQuestion > numQuestion) {
+            self.performSegue(withIdentifier: "toPro", sender: self)
+        } else {
+            Question.text = questionList[currentQuestion]
+        }
     }
     @IBAction func q1b2(_ sender: UIButton) {
         second += (10 * Int.random(in: 0 ... 10))
+        currentQuestion += 1
+        if (currentQuestion > numQuestion) {
+            self.performSegue(withIdentifier: "toPro", sender: self)
+        } else {
+            Question.text = questionList[currentQuestion]
+        }
     }
     
+    @IBAction func Skip(_ sender: Any) {
+        currentQuestion += 1
+        if (currentQuestion > numQuestion) {
+            self.performSegue(withIdentifier: "toPro", sender: self)
+        } else {
+            Question.text = questionList[currentQuestion]
+        }
+    }
     
     /*
      // MARK: - Navigation

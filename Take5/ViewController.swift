@@ -11,8 +11,8 @@ import UIKit
 var first: Int = 0
 var second: Int = 0
 
-var choice1: String = ""
-var choice2: String = ""
+var choice1: String = "Option A"
+var choice2: String = "Option B"
 
 
 
