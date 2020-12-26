@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ProConViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Option1: UILabel!
@@ -25,20 +26,93 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
     var oneEdit: Int = 0
     var twoEdit: Int = 0
     
+    var bannerViewBottom: GADBannerView!
+    var bannerViewTop: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Option1.text = choice1
         Option2.text = choice2
-        text1.placeholder = "Pros or Cons for " + choice1
-        text2.placeholder = "Pros or Cons for " + choice2
+        text1.placeholder = "For " + choice1
+        text2.placeholder = "For " + choice2
         result1.text.append("\n\n")
         result2.text.append("\n\n")
         conTable1.text.append("\n\n")
         conTable2.text.append("\n\n")
         text1.delegate = self
         text2.delegate = self
+        text1.layer.borderWidth = 1
+        text2.layer.borderWidth = 1
+        if #available(iOS 13.0, *) {
+            text1.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+            text2.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
+        text1.layer.cornerRadius = 8
+        text2.layer.cornerRadius = 8
+        Pro1.layer.cornerRadius = 8
+        Pro2.layer.cornerRadius = 8
+        Con1.layer.cornerRadius = 8
+        Con2.layer.cornerRadius = 8
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         // Do any additional setup after loading the view.
+        
+        bannerViewBottom = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerViewTop = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        
+        addBannerViewToViewBottom(bannerViewBottom)
+        addBannerViewToViewTop(bannerViewTop)
+        
+        bannerViewBottom.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewBottom.rootViewController = self
+        bannerViewBottom.load(GADRequest())
+        
+        bannerViewTop.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewTop.rootViewController = self
+        bannerViewTop.load(GADRequest())
+    }
+    
+    func addBannerViewToViewBottom(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
+    func addBannerViewToViewTop(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .top,
+                                relatedBy: .equal,
+                                toItem: topLayoutGuide,
+                                attribute: .bottom,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

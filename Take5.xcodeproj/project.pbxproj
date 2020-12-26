@@ -18,11 +18,6 @@
 		BE8CF0B221E7F9EE006C250D /* Take5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF0B121E7F9EE006C250D /* Take5UITests.swift */; };
 		BEF2C34B21EBF74C000E6F85 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34A21EBF74C000E6F85 /* QuestionViewController.swift */; };
 		BEF2C34D21EBFCA9000E6F85 /* FastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */; };
-		BEF2C34F21EC053E000E6F85 /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */; };
-		BEF2C35121EC054A000E6F85 /* Q3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */; };
-		BEF2C35321EC0554000E6F85 /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */; };
-		BEF2C35521EC0561000E6F85 /* Q5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */; };
-		BEF2C35721EC056D000E6F85 /* Q6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */; };
 		BEF2C35B21EC0595000E6F85 /* ProConViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */; };
 		BEF2C35D21EC05AE000E6F85 /* GutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */; };
 		BEFD062721EF079100F6F737 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFD062221EF078300F6F737 /* OpenSans-Bold.ttf */; };
@@ -75,11 +70,6 @@
 		BE8CF0B321E7F9EE006C250D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEF2C34A21EBF74C000E6F85 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastViewController.swift; sourceTree = "<group>"; };
-		BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2ViewController.swift; sourceTree = "<group>"; };
-		BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3ViewController.swift; sourceTree = "<group>"; };
-		BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
-		BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q5ViewController.swift; sourceTree = "<group>"; };
-		BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q6ViewController.swift; sourceTree = "<group>"; };
 		BEF2C35A21EC0595000E6F85 /* ProConViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProConViewController.swift; sourceTree = "<group>"; };
 		BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutViewController.swift; sourceTree = "<group>"; };
 		BEFD061E21EF078200F6F737 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -173,11 +163,6 @@
 				BEF2C35C21EC05AE000E6F85 /* GutViewController.swift */,
 				BEF2C34C21EBFCA9000E6F85 /* FastViewController.swift */,
 				BEF2C34A21EBF74C000E6F85 /* QuestionViewController.swift */,
-				BEF2C34E21EC053E000E6F85 /* Q2ViewController.swift */,
-				BEF2C35021EC0549000E6F85 /* Q3ViewController.swift */,
-				BEF2C35221EC0554000E6F85 /* Q4ViewController.swift */,
-				BEF2C35421EC0561000E6F85 /* Q5ViewController.swift */,
-				BEF2C35621EC056D000E6F85 /* Q6ViewController.swift */,
 				BE8CF09821E7F9EE006C250D /* Assets.xcassets */,
 				BE8CF09A21E7F9EE006C250D /* LaunchScreen.storyboard */,
 				BE8CF09D21E7F9EE006C250D /* Info.plist */,
@@ -451,16 +436,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF2C34D21EBFCA9000E6F85 /* FastViewController.swift in Sources */,
-				BEF2C34F21EC053E000E6F85 /* Q2ViewController.swift in Sources */,
 				BE80C70121F10A1B0044799E /* PrivacyViewController.swift in Sources */,
 				BEF2C34B21EBF74C000E6F85 /* QuestionViewController.swift in Sources */,
-				BEF2C35321EC0554000E6F85 /* Q4ViewController.swift in Sources */,
 				BEF2C35D21EC05AE000E6F85 /* GutViewController.swift in Sources */,
 				BE8CF09421E7F9EC006C250D /* ViewController.swift in Sources */,
 				BEF2C35B21EC0595000E6F85 /* ProConViewController.swift in Sources */,
-				BEF2C35121EC054A000E6F85 /* Q3ViewController.swift in Sources */,
-				BEF2C35721EC056D000E6F85 /* Q6ViewController.swift in Sources */,
-				BEF2C35521EC0561000E6F85 /* Q5ViewController.swift in Sources */,
 				BE8CF09221E7F9EC006C250D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35ZK849627;
 				INFOPLIST_FILE = Take5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,6 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35ZK849627;
 				INFOPLIST_FILE = Take5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

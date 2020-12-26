@@ -34,6 +34,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UIView.setAnimationDuration(3)
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
         UIView.commitAnimations()
+        Input1.layer.borderWidth = 1
+        Input2.layer.borderWidth = 1
+        if #available(iOS 13.0, *) {
+            Input1.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+            Input2.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
+        Input1.layer.cornerRadius = 8
+        Input2.layer.cornerRadius = 8
     }
     
     //Mark: Delegate
