@@ -19,19 +19,19 @@ class GutViewController: UIViewController {
         Option1.setTitle(choice1, for: .normal)
         Option2.setTitle(choice2, for: .normal)
         self.view.backgroundColor = UIColor(hue: 0.53, saturation: 0.60, brightness: 0.86, alpha: 1)
-        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GutViewController.update), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GutViewController.update), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
     }
     @IBAction func gut1(_ sender: UIButton) {
-        first += (30 * Int.random(in: 0 ... 10))
+        first += (10 * Int.random(in: 0 ... 5))
     }
     @IBAction func gut2(_ sender: UIButton) {
-        second += (30 * Int.random(in: 0 ... 10))
+        second += (10 * Int.random(in: 0 ... 5))
     }
     
     @objc func update() {
-        if(count > 0) {
+        if (count > 0) {
             count -= 1
             timeLeft.text = String(count)
         } else {

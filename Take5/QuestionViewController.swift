@@ -44,11 +44,11 @@ class QuestionViewController: UIViewController {
         addBannerViewToViewBottom(bannerViewBottom)
         addBannerViewToViewTop(bannerViewTop)
         
-        bannerViewBottom.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewBottom.adUnitID = "ca-app-pub-1633693256297531/4273670789"
         bannerViewBottom.rootViewController = self
         bannerViewBottom.load(GADRequest())
         
-        bannerViewTop.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewTop.adUnitID = "ca-app-pub-1633693256297531/1276698707"
         bannerViewTop.rootViewController = self
         bannerViewTop.load(GADRequest())
     }
@@ -96,7 +96,7 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func q1b1(_ sender: UIButton) {
-        first += (10 * Int.random(in: 0 ... 10))
+        first += (10 * Int.random(in: 0 ... 5))
         currentQuestion += 1
         if (currentQuestion > numQuestion) {
             self.performSegue(withIdentifier: "toPro", sender: self)
@@ -105,7 +105,7 @@ class QuestionViewController: UIViewController {
         }
     }
     @IBAction func q1b2(_ sender: UIButton) {
-        second += (10 * Int.random(in: 0 ... 10))
+        second += (10 * Int.random(in: 0 ... 5))
         currentQuestion += 1
         if (currentQuestion > numQuestion) {
             self.performSegue(withIdentifier: "toPro", sender: self)

@@ -64,11 +64,11 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
         addBannerViewToViewBottom(bannerViewBottom)
         addBannerViewToViewTop(bannerViewTop)
         
-        bannerViewBottom.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewBottom.adUnitID = "ca-app-pub-1633693256297531/1647507440"
         bannerViewBottom.rootViewController = self
         bannerViewBottom.load(GADRequest())
         
-        bannerViewTop.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewTop.adUnitID = "ca-app-pub-1633693256297531/2960589114"
         bannerViewTop.rootViewController = self
         bannerViewTop.load(GADRequest())
     }
@@ -128,7 +128,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result1.text.append("\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
-            first += (10 * Int.random(in: 0 ... 10))
+            first += (10 * Int.random(in: 0 ... 5))
         }
     }
     
@@ -140,7 +140,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             conTable1.text.append("\(text)\n")
             text1.text = ""
             text1.resignFirstResponder()
-            first -= (10 * Int.random(in: 0 ... 10))
+            first -= (10 * Int.random(in: 0 ... 5))
         }
     }
     
@@ -152,7 +152,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             result2.text.append("\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
-            second += (10 * Int.random(in: 0 ... 10))
+            second += (10 * Int.random(in: 0 ... 5))
         }
     }
     
@@ -164,7 +164,7 @@ class ProConViewController: UIViewController, UITextFieldDelegate {
             conTable2.text.append("\(text)\n")
             text2.text = ""
             text2.resignFirstResponder()
-            second -= (10 * Int.random(in: 0 ... 10))
+            second -= (10 * Int.random(in: 0 ... 5))
         }
     }
     /*

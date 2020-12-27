@@ -30,11 +30,11 @@ class FastViewController: UIViewController {
         addBannerViewToViewBottom(bannerViewBottom)
         addBannerViewToViewTop(bannerViewTop)
         
-        bannerViewBottom.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewBottom.adUnitID = "ca-app-pub-1633693256297531/3015912519"
         bannerViewBottom.rootViewController = self
         bannerViewBottom.load(GADRequest())
         
-        bannerViewTop.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerViewTop.adUnitID = "ca-app-pub-1633693256297531/2373748831"
         bannerViewTop.rootViewController = self
         bannerViewTop.load(GADRequest())
     }
